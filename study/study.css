@@ -1,0 +1,741 @@
+/* =========================================================
+   WIRELAB — STUDY
+   HOME-STYLE GLASS / GOLD THEME
+========================================================= */
+
+/* =========================================================
+   STUDY CONTENT
+========================================================= */
+
+.study-content {
+    width: calc(100% - 20px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 0 40px;
+}
+
+/* =========================================================
+   MAIN GLASS PANELS
+========================================================= */
+
+.course-overview,
+.study-section,
+.study-next {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(227, 226, 226, 0.10),
+            rgba(184, 184, 184, 0.035)
+        );
+
+    border: 1px solid rgba(214, 168, 79, 0.25);
+    border-radius: 14px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        inset 0 -1px 0 rgba(214, 168, 79, 0.06);
+}
+
+/* =========================================================
+   STUDY INTRO
+========================================================= */
+
+.study-intro {
+    width: 100%;
+    margin: 0 0 16px;
+    padding: 0;
+
+    text-align: center;
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+/* =========================================================
+   STUDY INTRO IMAGE
+========================================================= */
+
+.study-intro-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0 0 4px;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(214, 168, 79, 0.28);
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.38);
+}
+
+/* =========================================================
+   STUDY INTRO TEXT
+========================================================= */
+
+.study-intro-text {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.study-intro-label {
+    display: block;
+
+    margin: 0;
+
+    color: #d6a84f;
+
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 2.8px;
+
+    text-shadow:
+        0 0 10px rgba(214, 168, 79, 0.14);
+}
+
+.study-intro-title {
+    display: block;
+
+    margin: 5px 0 0;
+
+    color: #f0c94a;
+
+    font-size: clamp(31px, 4vw, 52px);
+    font-weight: 700;
+    line-height: 1.05;
+
+    text-shadow:
+        0 2px 18px rgba(0, 0, 0, 0.50),
+        0 0 14px rgba(214, 168, 79, 0.08);
+}
+
+.study-intro-description {
+    display: block;
+
+    max-width: 760px;
+
+    margin: 14px auto 0;
+
+    color: rgba(235, 235, 235, 0.68);
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+/* =========================================================
+   COURSE OVERVIEW
+========================================================= */
+
+.course-overview {
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 18px;
+
+    width: 100%;
+
+    padding: 18px;
+
+    margin: 0 0 16px;
+}
+
+.course-overview-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.course-overview-label {
+    display: block;
+
+    color: #d6a84f;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 10px rgba(214, 168, 79, 0.12);
+}
+
+.course-overview-title {
+    display: block;
+
+    margin: 7px 0 0;
+
+    color: #f3f3f3;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.course-overview-description {
+    display: block;
+
+    margin: 8px 0 0;
+
+    color: rgba(225, 225, 225, 0.58);
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   COURSE PROGRESS
+========================================================= */
+
+.course-progress {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid rgba(214, 168, 79, 0.20);
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(0, 0, 0, 0.25)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.06),
+        inset 0 -1px 0 rgba(214, 168, 79, 0.05);
+}
+
+.course-progress-heading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    color: rgba(225, 225, 225, 0.48);
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.course-progress-heading strong {
+    color: #f0c94a;
+
+    font-size: 16px;
+    letter-spacing: 0;
+
+    text-shadow:
+        0 0 10px rgba(214, 168, 79, 0.22);
+}
+
+.course-progress-track {
+    width: 100%;
+    height: 6px;
+
+    margin: 12px 0 10px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255, 255, 255, 0.075);
+}
+
+.course-progress-fill {
+    width: 0;
+    height: 100%;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(
+            90deg,
+            #9f7b1f,
+            #d6a84f,
+            #f0c94a
+        );
+
+    transition:
+        width 0.25s ease;
+}
+
+.course-progress-count {
+    color: rgba(225, 225, 225, 0.40);
+
+    font-size: 11px;
+}
+
+/* =========================================================
+   TABLE OF CONTENTS
+========================================================= */
+
+.study-toc {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================================
+   STUDY SECTION
+========================================================= */
+
+.study-section {
+    width: 100%;
+
+    margin: 0 0 16px;
+    padding: 17px;
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.study-section-heading {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 11px;
+
+    margin: 0 0 15px;
+}
+
+.study-section-number {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    flex: 0 0 40px;
+
+    border: 1px solid rgba(214, 168, 79, 0.38);
+    border-radius: 10px;
+
+    color: #f0c94a;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.11),
+            rgba(0, 0, 0, 0.24)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.study-section-info {
+    min-width: 0;
+}
+
+.study-section-title {
+    margin: 0;
+
+    color: #f1f1f1;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.study-section-description {
+    margin: 5px 0 0;
+
+    color: rgba(220, 220, 220, 0.52);
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   UNIT GRID
+========================================================= */
+
+.study-unit-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================================
+   UNIT CARD
+========================================================= */
+
+.study-unit {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 150px;
+
+    padding: 16px;
+
+    text-decoration: none;
+
+    border: 1px solid rgba(214, 168, 79, 0.16);
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(18, 20, 22, 0.38) 55%,
+            rgba(0, 0, 0, 0.48)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.06),
+        inset 0 -1px 0 rgba(214, 168, 79, 0.04);
+}
+
+/* =========================================================
+   UNIT CARD HOVER
+========================================================= */
+
+.study-unit:hover {
+    border-color:
+        rgba(214, 168, 79, 0.45);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.075),
+            rgba(18, 20, 22, 0.44) 55%,
+            rgba(0, 0, 0, 0.52)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 0 18px rgba(214, 168, 79, 0.06);
+}
+
+/* =========================================================
+   UNIT TEXT
+========================================================= */
+
+.study-unit-number {
+    display: block;
+
+    color: rgba(214, 168, 79, 0.68);
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.study-unit-title {
+    display: block;
+
+    margin: 8px 0 0;
+
+    color: #eeeeee;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.study-unit-description {
+    display: block;
+
+    margin: 8px 0 0;
+
+    color: rgba(220, 220, 220, 0.50);
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.study-unit-status {
+    display: block;
+
+    margin-top: auto;
+    padding-top: 14px;
+
+    color: rgba(214, 168, 79, 0.72);
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+/* =========================================================
+   CURRENT UNIT
+========================================================= */
+
+.study-unit.current {
+    border-color:
+        rgba(240, 201, 74, 0.62);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.12),
+            rgba(18, 18, 17, 0.44) 58%,
+            rgba(0, 0, 0, 0.52)
+        );
+
+    box-shadow:
+        0 0 20px rgba(214, 168, 79, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.09),
+        inset 0 -1px 0 rgba(214, 168, 79, 0.07);
+}
+
+.study-unit.current .study-unit-status {
+    color: #f0c94a;
+
+    text-shadow:
+        0 0 8px rgba(214, 168, 79, 0.18);
+}
+
+/* =========================================================
+   COMPLETED UNIT
+========================================================= */
+
+.study-unit.completed {
+    border-color:
+        rgba(214, 168, 79, 0.34);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.07),
+            rgba(18, 20, 22, 0.40),
+            rgba(0, 0, 0, 0.50)
+        );
+}
+
+.study-unit.completed .study-unit-status {
+    color: #d6a84f;
+
+    text-shadow:
+        0 0 8px rgba(214, 168, 79, 0.12);
+}
+
+/* =========================================================
+   COMPLETED UNIT CHECKMARK
+========================================================= */
+
+.study-unit-check {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(214, 168, 79, 0.48);
+    border-radius: 50%;
+
+    background:
+        rgba(214, 168, 79, 0.10);
+
+    color: #f0c94a;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    opacity: 0;
+}
+
+.study-unit.completed .study-unit-check {
+    opacity: 1;
+}
+
+/* =========================================================
+   NEXT STEP
+========================================================= */
+
+.study-next {
+    width: 100%;
+
+    margin: 0;
+    padding: 22px 16px;
+
+    text-align: center;
+}
+
+.study-next-label {
+    color: #d6a84f;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 10px rgba(214, 168, 79, 0.14);
+}
+
+.study-next-title {
+    margin: 7px 0 0;
+
+    color: #eeeeee;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.study-next-description {
+    margin: 6px 0 0;
+
+    color: rgba(215, 215, 215, 0.45);
+
+    font-size: 12px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 601px) {
+
+    .study-content {
+        width: min(1200px, calc(100% - 40px));
+        padding: 30px 0 60px;
+    }
+
+    .study-intro {
+        margin-bottom: 22px;
+    }
+
+    .course-overview {
+        flex-direction: row;
+        align-items: center;
+
+        gap: 30px;
+
+        padding: 25px;
+
+        margin-bottom: 22px;
+    }
+
+    .course-overview-title {
+        font-size: 25px;
+    }
+
+    .course-overview-description {
+        font-size: 14px;
+    }
+
+    .course-progress {
+        width: 280px;
+        flex: 0 0 280px;
+        padding: 17px;
+    }
+
+    .study-section {
+        margin-bottom: 22px;
+        padding: 22px;
+    }
+
+    .study-section-heading {
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 18px;
+    }
+
+    .study-section-number {
+        width: 48px;
+        height: 48px;
+        flex: 0 0 48px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+
+    .study-section-title {
+        font-size: 21px;
+    }
+
+    .study-section-description {
+        font-size: 13px;
+    }
+
+    .study-unit-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .study-unit {
+        min-height: 180px;
+        padding: 17px;
+        border-radius: 13px;
+    }
+}
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 951px) {
+
+    .study-unit-grid {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* =========================================================
+   TOUCH DEVICES
+   No hover movement or scroll-linked effects
+========================================================= */
+
+@media (hover: none) {
+
+    .study-unit:hover {
+        border-color:
+            rgba(214, 168, 79, 0.16);
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(255, 255, 255, 0.055),
+                rgba(18, 20, 22, 0.38) 55%,
+                rgba(0, 0, 0, 0.48)
+            );
+
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.06),
+            inset 0 -1px 0 rgba(214, 168, 79, 0.04);
+    }
+}
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
